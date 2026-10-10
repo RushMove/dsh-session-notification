@@ -196,6 +196,12 @@ export const RELEASE_NOTES: Record<string, ReleaseNotes> = {
     ],
     fixes: [],
   },
+  '0.2.6': {
+    features: [
+      '- **当前会话提醒时机三档(#8,贡献者 @RushMove)**: 原来的「当前会话也提醒」布尔开关升级为三档选择器——「仅后台或最小化」(默认)、「切到其他应用时」、「始终提醒」;新增基于 `document.hasFocus()` 的失焦检测,解决分屏/多屏场景下窗口仍然可见、但你已经切到别的应用时当前会话完全不提醒的问题;旧偏好自动迁移(`notifyCurrent: true` → 「始终提醒」),中英文文案与 README 防打扰对照表同步更新',
+    ],
+    fixes: [],
+  },
   '0.2.5': {
     features: [],
     fixes: [

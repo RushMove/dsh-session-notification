@@ -196,6 +196,12 @@ export const RELEASE_NOTES: Record<string, ReleaseNotes> = {
     ],
     fixes: [],
   },
+  '0.2.5': {
+    features: [],
+    fixes: [
+      '- **依赖升级至 0.2.1-alpha.2**: @deepseek-ai/dsh-* 依赖升到 ^0.2.1-alpha.2(peer 仍为 cordis ~4.0.5-alpha.1 / schemastery ~3.18.5-alpha.1);alpha.1→alpha.2 的 669 个提交逐项核对后无需改代码——插件消费的结构化面全部保持:五个 Regular 图标、`turn-error.seq/message`、`ChatSnapshot.nodes`(新增的 `ChatNodeStore.bottomSource` 是增量)、`chat` target 与 `AssistantChatData.blocks`、`activate("chat")`/target 读取语义、`ConfigForm` 契约、`SessionStatus.pendingInteraction`、`SessionSnapshot.lastAgentError`、平台模块表;ui-workspace 的改动是 `forkSession` 选项/文档与内部重构(`openSession(target)` 签名未变),sessions 契约新增 `fork` 的 `allowMigration`(与本插件无关),桌面端通知链路(权限默认放行、`dshDesktop` 桥)无变化;typecheck/128 specs/build 全绿',
+    ],
+  },
   '0.2.4': {
     features: [],
     fixes: [
